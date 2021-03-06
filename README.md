@@ -34,7 +34,7 @@ const knex = require('knex')({
 
 ```
 
-##Instalação 
+## Instalação 
 No terminal, acesse a página do projeto e rode o seguinte comando:
 ```node
   npm install
@@ -65,5 +65,5 @@ Segue alguns json para utlizar de exemplo na raw do Postman
 }
 ```
 
-##Dificuldades
+## Dificuldades
 Obtive certa dificuldade ao tentar utilizar o padrão MVC na arquitetura, tentei achar exemplos na documentação, porém não conseguir implementar como gostaria. 
