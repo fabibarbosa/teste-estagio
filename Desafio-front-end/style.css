@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    height: 85px;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+div.header-wrapper {
+    max-width: 1280px;
+    position: relative;
+    margin-left: 20px;
+}
+
+img#logo {
+    height: 37px;
+    display: inline-block;
+    vertical-align: middle;
+}   
+
+
+
+section.naver-team {
+    width: 100%;
+    margin-top: 30px;
+
+}
+div.naver-team-title {
+    max-width: 1280px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+}
+div.naver-team-wrapper {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    min-height: 375px;
+    text-align: left;
+    margin-bottom: 4rem;
+    color: Gray / Gray 900  ;
+}
+
+
+h6.card-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+p.card-name {
+    line-height: 18px;
+    font-weight: 800;
+    margin-bottom: 5px;
+
+}
+
+img.card-pic {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+	div.naver-team-wrapper { 
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+    div.card {
+        width: 47%;
+
+    }
+    div.card-pic {
+        min-height: 225px;
+    }
+}
+@media only screen and (min-width: 845px){
+    div.card:hover {
+        transform: scale(1.1); 
+    }
+    div.naver-team-wrapper { 
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+    div.card {
+        width: 30%;
+        margin-bottom: 2rem;
+
+    }
+    div.card-pic {
+        min-height: 225px;
+    }
+}
+
+
+@media only screen and (min-width: 1060px){
+
+    div.naver-team-title {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    div.naver-team-wrapper { 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2%;
+        margin: 0 auto;
+
+    }
+    div.header-wrapper {
+        margin: 0 auto; 
+        margin-left: 15px;
+    }
+	div.card {
+        width: 23%;
+    }
+
+}
