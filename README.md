@@ -4,9 +4,10 @@ Os Exercícios propostos encontram-se disponível <a href="https://codesandbox.i
 
 ## Documentação referente a RESTFULL API
 
-O banco dados utilizado foi o mysql ( <a href=""> Você pode obter ele no XAMP </a>)
+O banco dados utilizado foi o <a href="https://www.mysql.com" > mysql </a> ( <a href=""> Você pode obter ele no XAMP </a>)
+<br>
 O projeto se encontrada disponível na porta 5000: http://localhost:5000/
-Cerifique de criar o seguinte banco de dados e suas tabelas: 
+## Cerifique de criar o seguinte banco de dados e suas tabelas: 
 
 ```sql
 
@@ -19,7 +20,7 @@ CREATE TABLE `naverdb`.`navers` ( `id` INT NOT NULL AUTO_INCREMENT ,
 
 ```
 
-O acesso ao bano de dados foi definido como o padrão do XAMP, caso você tenha alterado, basta alterar a constante knex, como describo abaixo
+##O acesso ao banco de dados foi definido como o padrão do XAMP, caso você tenha alterado as configurações de acesso ao Mysql, basta alterar a váriavel knex, como descrito abaixo 
 
 ```javascript
 const knex = require('knex')({
@@ -34,14 +35,14 @@ const knex = require('knex')({
 
 ```
 
-####Instalação 
+##Instalação 
 No terminal, acesse a página do projeto e rode o seguinte comando:
 ```node
   npm install
   npm index.js
 ```
 ## Teste das rquest
-Utilizando o <a href="">Postman </a>, faça as requisições para as seguintes rotas:
+Utilizando o <a href="https://www.postman.com/">Postman </a>, faça as requisições para as seguintes rotas:
 
 ```
 http://localhost:5000/navers/store
@@ -58,10 +59,9 @@ Segue alguns json para utlizar de exemplo na raw do Postman
   "admission_date": "2020-06-12",
    "job_role": "Desenvolvedor"
 }```
-```
+
+```json
 {
   name: "Projeto x",
   navers: [1,3]
-}
-
-```
+}```
