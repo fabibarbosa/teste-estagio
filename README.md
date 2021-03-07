@@ -11,13 +11,12 @@ O projeto se encontrada disponível na porta 5000: http://localhost:5000/
 
 ```sql
 
-CREATE TABLE `naverdb`.`projects` ( `id` INT NOT NULL AUTO_INCREMENT ,
-`name` VARCHAR(80) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE DATABASE naversdb;
 
-CREATE TABLE `naverdb`.`navers` ( `id` INT NOT NULL AUTO_INCREMENT , 
-`name` VARCHAR(80) NOT NULL , `job_role` VARCHAR(180) NOT NULL , `birthdate` DATE NOT NULL , 
-`admission_date` DATE NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
-
+CREATE TABLE `naversdb`.`projects` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(80) NOT NULL , `navers` VARCHAR(200) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `naversdb`.`navers` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(80) NOT NULL , `birth_date` DATE NOT NULL , `admission_date` DATE NOT NULL , `job_role` VARCHAR(80) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+INSERT INTO `navers` (`id`, `name`, `birth_date`, `admission_date`, `job_role`) VALUES (NULL, 'Fulano', '1998-06-12', '2020-06-12', 'Desenvolvedor'), (NULL, 'Ciclano', '1998-06-12', '2018-06-12', 'Desenvolvedor')
+INSERT INTO `projects` (`id`, `name`, `navers`) VALUES (NULL, 'Projeto muito bom', '1,3');
 ```
 ## O acesso ao banco de dados foi definido como o padrão do XAMP, caso você tenha alterado as configurações de acesso ao Mysql, basta alterar a váriavel knex, como descrito abaixo 
 
